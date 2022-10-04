@@ -32,7 +32,8 @@ $ npm install nestjs-telegram
 // Inside of your module imports
 @Module({
   imports: [TelegramModule.forRoot({
-    botKey: 'YourBotApiToken'
+    botKey: 'YourBotApiToken',
+    ownServerUrl: 'OwnServerUrl'
   })]
 })
 
@@ -41,7 +42,8 @@ $ npm install nestjs-telegram
   imports: [
     TelegramModule.forRootAsync({
       useFactory: async (configService: ConfigService) => ({
-        botKey: configService.get('Telegram_API_Key')
+        botKey: configService.get('Telegram_API_Key'),
+        ownServerUrl: configService.get('Own_Server_Url')
       }),
       inject: [ConfigService]
     })

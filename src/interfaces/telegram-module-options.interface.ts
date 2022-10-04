@@ -2,7 +2,7 @@ import { ModuleMetadata, Type } from '@nestjs/common/interfaces';
 
 export interface TelegramModuleOptions {
   botKey: string;
-  ownServerUrl?: string
+  ownServerUrl?: string;
 }
 
 export interface TelegramOptionsFactory {

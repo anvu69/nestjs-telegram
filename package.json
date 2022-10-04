@@ -1,14 +1,11 @@
 {
-  "name": "nestjs-telegram",
+  "name": "@anvu1996/nestjs-telegram",
   "version": "1.2.0",
   "description": "A NestJS Module for Telegram Bots",
-  "author": {
-    "email": "me@jaymcdoniel.dev",
-    "name": "Jay McDoniel"
-  },
+  "author": "Jay McDoniel <me@jaymcdoniel.dev>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jmcdo29/nestjs-telegram"
+    "url": "git+https://github.com/jmcdo29/nestjs-telegram.git"
   },
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
@@ -36,13 +33,14 @@
   "dependencies": {
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
+    "axios": "^0.19.2",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
-    "@nestjs/testing": "^6.0.0",
+    "@nestjs/testing": "^6.11.11",
     "@types/express": "^4.16.0",
     "@types/jest": "^26.0.4",
     "@types/node": "^14.0.23",
@@ -61,5 +59,12 @@
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/jmcdo29/nestjs-telegram/issues"
+  },
+  "homepage": "https://github.com/jmcdo29/nestjs-telegram#readme",
+  "publishConfig": {
+    "@anvu1996:registry": "https://npm.pkg.github.com"
   }
 }
